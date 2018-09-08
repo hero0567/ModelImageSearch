@@ -8,8 +8,10 @@ logger = logging.getLogger('AddImage')
 
 es = Elasticsearch()
 ses = SignatureES(es)
+count = 0
 
 def add_dir_image(src):
+    global count
     logger.info('Try to add images from %s', src)
     if os.path.isdir(src):
         files = os.listdir(src)
@@ -18,8 +20,15 @@ def add_dir_image(src):
                 add_dir_image(os.path.join(src, file))
                 continue
             else:
-                ses.add_image(os.path.join(src, file))
+                if file.endswith(".jpg"):
+                    ses.add_image(os.path.join(src, file))
+                    count=count+1
+
+
+def import_image(src):
+    add_dir_image(src)
+    logger.info("Total %s images added to server.", count)
 
 if __name__ == '__main__':
-    add_dir_image(os.path.join("images"))
+    import_image(os.path.join("images"))
 

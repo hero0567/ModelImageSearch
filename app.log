@@ -1,1 +1,9 @@
 2018-09-08 18:44:20,155 - main - INFO - logger of mod say something...
+2018-09-08 19:46:21,513 - home - INFO - Loading home page.
+2018-09-08 19:46:36,739 - upload - INFO - Send upload request.
+2018-09-08 19:46:36,741 - upload - INFO - upload 004.jpg to search
+2018-09-08 19:46:36,808 - elasticsearch - INFO - GET http://localhost:9200/images/image/_search?size=100&timeout=10s [status:200 request:0.016s]
+2018-09-08 19:48:22,289 - upload - INFO - Send upload request.
+2018-09-08 19:48:22,290 - upload - INFO - upload 004.jpg to search
+2018-09-08 19:48:22,294 - SearchImage - INFO - Search image uploadimage\004.jpg...
+2018-09-08 19:48:22,339 - elasticsearch - INFO - GET http://localhost:9200/images/image/_search?size=100&timeout=10s [status:200 request:0.017s]

@@ -1,14 +1,34 @@
-Search Result Page
-{{result}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Result</title>
+</head>
+<body>
 
-{% for r in result %}
-<p>{{ r.score }}  {{ r.path }}</p>
-{% endfor %}
+<div style="margin-top: 20px;margin-left: 55px">
+    <div style="margin: 5px">
+        Search Image
+    </div>
+    <div>
+        <img width="200px" src="{{ load_img }}" />
+    </div>
+    <div style="margin: 5px">
+        Search Result Page
+    </div>
+    <table border="1" cellspacing="0" cellpadding="0" border-color="#b6ff00">
+        <tr><td>Score</td><td>Path</td><td>Img</td></tr>
+        {% for r in result %}
+        <tr>
+            <td>{{ r.score }}</td>
+            <td>{{ r.path }}</td>
+            <td><img width="200px" src="/static/{{ r.path }}" /></td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
 
-<table border="1" cellspacing="0" cellpadding="0" border-color="#b6ff00">
-    <tr><td>Score</td><td>Img</td></tr>
-    {% for r in result %}
-    <tr><td>{{ r.score }}</td><td><img width="200px" src="/static/{{ r.path }}" /></td></tr>
-    {% endfor %}
-</table>
+</body>
+</html>
+
 
