@@ -1,5 +1,8 @@
 from elasticsearch import Elasticsearch
 from image_match.elasticsearch_driver import SignatureES
+import logging.config
+
+logging.config.fileConfig('log.conf')
 
 def search(name):
     es = Elasticsearch()

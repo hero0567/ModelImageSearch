@@ -2,7 +2,7 @@
 import os
 from django.http import HttpResponse
 from django.shortcuts import render
-from engine import SearchImage
+import SearchImage
 
 def upload(request):
     if request.method == 'POST':# 获取对象

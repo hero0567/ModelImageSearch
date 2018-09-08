@@ -1,0 +1,6 @@
+2018-09-08 18:37:44,530 - root - DEBUG - debug 信息
+2018-09-08 18:37:44,530 - root - INFO - info 信息
+2018-09-08 18:37:44,531 - root - WARNING - warn 信息
+2018-09-08 18:37:44,531 - root - ERROR - error 信息
+2018-09-08 18:37:44,531 - root - CRITICAL - critical 信息
+2018-09-08 18:37:44,531 - root - DEBUG - 这些东西 是自定义信息
