@@ -17,9 +17,18 @@ from django.contrib import admin
 from django.urls import path
 from web.view import homepage
 from web.view import home
+from web.view import search
+from web.view import upload
+from web import settings
 
 urlpatterns = [
     path('', home.hello),
     path('home/', homepage.home),
     path('login/', admin.site.urls),
+    path('search/', search.view),
+    path('search/result/', search.result),
+    path('upload/', upload.upload),
+
+    #path('static/','django.views.static.serve',{'document_root':settings.STATIC_ROOT}, name='static'),
+    #path('uploadimage/', 'django.views.static.serve', {'document_root':'C:\\workspace\\ModelImageSearch\\uploadimage'}),
 ]
