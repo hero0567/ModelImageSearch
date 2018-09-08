@@ -12,8 +12,10 @@ def hello(request):
 
 
 def admin(request):
-    logger.info("Loading admin page.")
-    return render(request, 'admin.html', None)
+    pwd = request.GET.get('pwd')
+    if "123" == pwd:
+        return render(request, 'admin.html', None)
+    return render(request, 'error.html', None)
 
 def view(request):
     return render(request, 'search.html', None)

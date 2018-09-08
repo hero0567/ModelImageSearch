@@ -65,3 +65,7 @@
 2018-09-08 21:20:15,887 - upload - INFO - upload 003.jpg to search
 2018-09-08 21:20:15,892 - SearchImage - INFO - Search image uploadimage\003.jpg...
 2018-09-08 21:20:15,996 - elasticsearch - INFO - GET http://localhost:9200/images/image/_search?size=100&timeout=10s [status:200 request:0.008s]
+2018-09-08 21:21:15,226 - upload - INFO - Send upload request.
+2018-09-08 21:21:15,228 - upload - INFO - upload 005.jpg to search
+2018-09-08 21:21:15,231 - SearchImage - INFO - Search image uploadimage\005.jpg...
+2018-09-08 21:21:15,347 - elasticsearch - INFO - GET http://localhost:9200/images/image/_search?size=100&timeout=10s [status:200 request:0.017s]
