@@ -69,3 +69,65 @@
 2018-09-08 21:21:15,228 - upload - INFO - upload 005.jpg to search
 2018-09-08 21:21:15,231 - SearchImage - INFO - Search image uploadimage\005.jpg...
 2018-09-08 21:21:15,347 - elasticsearch - INFO - GET http://localhost:9200/images/image/_search?size=100&timeout=10s [status:200 request:0.017s]
+2018-09-08 21:26:24,347 - home - INFO - Loading home page.
+2018-09-08 21:27:49,366 - upload - INFO - Send upload request.
+2018-09-08 21:27:49,369 - upload - INFO - upload 005.jpg to search
+2018-09-08 21:27:49,372 - SearchImage - INFO - Search image uploadimage\005.jpg...
+2018-09-08 21:27:49,482 - elasticsearch - INFO - GET http://localhost:9200/images/image/_search?size=100&timeout=10s [status:200 request:0.014s]
+2018-09-08 21:28:54,171 - home - INFO - Loading home page.
+2018-09-08 21:30:12,554 - upload - INFO - Send upload request.
+2018-09-08 21:30:12,557 - upload - INFO - upload 003.jpg to search
+2018-09-08 21:30:12,569 - SearchImage - INFO - Search image uploadimage\003.jpg...
+2018-09-08 21:30:12,736 - elasticsearch - INFO - GET http://localhost:9200/images/image/_search?size=100&timeout=10s [status:200 request:0.015s]
+2018-09-08 21:45:44,443 - elasticsearch - INFO - DELETE http://localhost:9200/images [status:200 request:0.244s]
+2018-09-08 21:45:46,732 - AddImage - INFO - Try to add images from images
+2018-09-08 21:45:47,094 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.306s]
+2018-09-08 21:45:47,233 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.022s]
+2018-09-08 21:45:47,274 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.011s]
+2018-09-08 21:45:47,411 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.019s]
+2018-09-08 21:45:47,412 - AddImage - INFO - Try to add images from images\images2
+2018-09-08 21:45:47,511 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.011s]
+2018-09-08 21:45:47,512 - AddImage - INFO - Try to add images from images\images2\images3
+2018-09-08 21:45:47,612 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.009s]
+2018-09-08 21:45:47,810 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.020s]
+2018-09-08 21:45:47,888 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.022s]
+2018-09-08 21:45:48,593 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.023s]
+2018-09-08 21:45:49,171 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.022s]
+2018-09-08 21:45:49,758 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.027s]
+2018-09-08 21:45:49,760 - AddImage - INFO - Total 11 images added to server.
+2018-09-08 21:50:25,117 - elasticsearch - INFO - DELETE http://localhost:9200/images [status:200 request:0.211s]
+2018-09-08 21:50:28,036 - AddImage - INFO - Try to add images from images
+2018-09-08 21:50:28,379 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.282s]
+2018-09-08 21:50:28,509 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.021s]
+2018-09-08 21:50:28,570 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.023s]
+2018-09-08 21:50:28,708 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.025s]
+2018-09-08 21:50:28,710 - AddImage - INFO - Try to add images from images\images2
+2018-09-08 21:50:28,827 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.012s]
+2018-09-08 21:50:28,829 - AddImage - INFO - Try to add images from images\images2\images3
+2018-09-08 21:50:28,948 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.012s]
+2018-09-08 21:50:29,150 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.009s]
+2018-09-08 21:50:29,241 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.023s]
+2018-09-08 21:50:30,161 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.028s]
+2018-09-08 21:50:30,881 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.046s]
+2018-09-08 21:50:31,877 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.030s]
+2018-09-08 21:50:31,879 - AddImage - INFO - Total 11 images added to server.
+2018-09-08 21:51:01,017 - upload - INFO - Send upload request.
+2018-09-08 21:51:01,046 - upload - INFO - upload »¡ÐÎÎÆ (1).jpg to search
+2018-09-08 21:51:01,053 - SearchImage - INFO - Search image uploadimage\»¡ÐÎÎÆ (1).jpg...
+2018-09-08 21:51:01,404 - elasticsearch - INFO - GET http://localhost:9200/images/image/_search?size=100&timeout=10s [status:200 request:0.021s]
+2018-09-08 21:51:23,389 - upload - INFO - Send upload request.
+2018-09-08 21:51:23,446 - upload - INFO - upload »¡ÐÎÎÆ (100).jpg to search
+2018-09-08 21:51:23,452 - SearchImage - INFO - Search image uploadimage\»¡ÐÎÎÆ (100).jpg...
+2018-09-08 21:51:24,017 - elasticsearch - INFO - GET http://localhost:9200/images/image/_search?size=100&timeout=10s [status:200 request:0.015s]
+2018-09-08 21:52:00,014 - upload - INFO - Send upload request.
+2018-09-08 21:52:00,067 - upload - INFO - upload »¡ÐÎÎÆ (100).jpg to search
+2018-09-08 21:52:00,072 - SearchImage - INFO - Search image uploadimage\»¡ÐÎÎÆ (100).jpg...
+2018-09-08 21:52:00,689 - elasticsearch - INFO - GET http://localhost:9200/images/image/_search?size=100&timeout=10s [status:200 request:0.008s]
+2018-09-08 21:52:20,209 - upload - INFO - Send upload request.
+2018-09-08 21:52:20,260 - upload - INFO - upload »¡ÐÎÎÆ (102).jpg to search
+2018-09-08 21:52:20,270 - SearchImage - INFO - Search image uploadimage\»¡ÐÎÎÆ (102).jpg...
+2018-09-08 21:52:20,821 - elasticsearch - INFO - GET http://localhost:9200/images/image/_search?size=100&timeout=10s [status:200 request:0.013s]
+2018-09-08 21:52:26,685 - upload - INFO - Send upload request.
+2018-09-08 21:52:26,738 - upload - INFO - upload »¡ÐÎÎÆ (101).jpg to search
+2018-09-08 21:52:26,751 - SearchImage - INFO - Search image uploadimage\»¡ÐÎÎÆ (101).jpg...
+2018-09-08 21:52:27,284 - elasticsearch - INFO - GET http://localhost:9200/images/image/_search?size=100&timeout=10s [status:200 request:0.011s]
