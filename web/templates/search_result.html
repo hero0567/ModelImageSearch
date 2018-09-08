@@ -1,3 +1,14 @@
 Search Result Page
 {{result}}
 
+{% for r in result %}
+<p>{{ r.score }}  {{ r.path }}</p>
+{% endfor %}
+
+<table border="1" cellspacing="0" cellpadding="0" border-color="#b6ff00">
+    <tr><td>Score</td><td>Img</td></tr>
+    {% for r in result %}
+    <tr><td>{{ r.score }}</td><td><img width="200px" src="/static/{{ r.path }}" /></td></tr>
+    {% endfor %}
+</table>
+
