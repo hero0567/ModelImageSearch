@@ -7,3 +7,61 @@
 2018-09-08 19:48:22,290 - upload - INFO - upload 004.jpg to search
 2018-09-08 19:48:22,294 - SearchImage - INFO - Search image uploadimage\004.jpg...
 2018-09-08 19:48:22,339 - elasticsearch - INFO - GET http://localhost:9200/images/image/_search?size=100&timeout=10s [status:200 request:0.017s]
+2018-09-08 20:33:41,859 - home - INFO - Loading home page.
+2018-09-08 20:33:46,267 - home - INFO - Loading admin page.
+2018-09-08 20:38:50,388 - home - INFO - Loading home page.
+2018-09-08 20:38:52,854 - home - INFO - Loading admin page.
+2018-09-08 20:39:21,009 - home - INFO - Loading admin page.
+2018-09-08 20:48:33,272 - home - INFO - Loading admin page.
+2018-09-08 20:50:51,080 - home - INFO - Loading admin page.
+2018-09-08 20:52:01,782 - home - INFO - Loading admin page.
+2018-09-08 20:52:11,012 - home - INFO - Loading admin page.
+2018-09-08 20:52:28,110 - home - INFO - Loading admin page.
+2018-09-08 20:52:52,226 - home - INFO - Loading admin page.
+2018-09-08 20:53:55,246 - home - INFO - Loading admin page.
+2018-09-08 20:54:45,878 - home - INFO - Loading admin page.
+2018-09-08 21:15:47,474 - home - INFO - Loading home page.
+2018-09-08 21:15:55,066 - upload - INFO - Send upload request.
+2018-09-08 21:15:55,082 - upload - INFO - upload 003.jpg to search
+2018-09-08 21:15:55,087 - SearchImage - INFO - Search image uploadimage\003.jpg...
+2018-09-08 21:15:55,212 - elasticsearch - WARNING - GET /images/image/_search?size=100&timeout=10s [status:404 request:0.010s]
+2018-09-08 21:16:13,344 - home - INFO - Loading admin page.
+2018-09-08 21:17:55,446 - home - INFO - Loading home page.
+2018-09-08 21:18:00,203 - home - INFO - Loading admin page.
+2018-09-08 21:18:02,781 - elasticsearch - WARNING - DELETE /images [status:404 request:0.009s]
+2018-09-08 21:18:07,814 - AddImage - INFO - Try to add images from images
+2018-09-08 21:18:08,273 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.398s]
+2018-09-08 21:18:08,395 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.026s]
+2018-09-08 21:18:08,454 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.025s]
+2018-09-08 21:18:08,568 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.009s]
+2018-09-08 21:18:08,569 - AddImage - INFO - Try to add images from images\images2
+2018-09-08 21:18:08,689 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.024s]
+2018-09-08 21:18:08,692 - AddImage - INFO - Try to add images from images\images2\images3
+2018-09-08 21:18:08,818 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.032s]
+2018-09-08 21:18:08,819 - AddImage - INFO - Total 6 images added to server.
+2018-09-08 21:18:52,837 - home - INFO - Loading home page.
+2018-09-08 21:19:02,257 - upload - INFO - Send upload request.
+2018-09-08 21:19:02,271 - upload - INFO - upload 003.jpg to search
+2018-09-08 21:19:02,274 - SearchImage - INFO - Search image uploadimage\003.jpg...
+2018-09-08 21:19:02,439 - elasticsearch - INFO - GET http://localhost:9200/images/image/_search?size=100&timeout=10s [status:200 request:0.017s]
+2018-09-08 21:19:15,230 - upload - INFO - Send upload request.
+2018-09-08 21:19:15,236 - upload - INFO - upload 005.jpg to search
+2018-09-08 21:19:15,241 - SearchImage - INFO - Search image uploadimage\005.jpg...
+2018-09-08 21:19:15,341 - elasticsearch - INFO - GET http://localhost:9200/images/image/_search?size=100&timeout=10s [status:200 request:0.011s]
+2018-09-08 21:19:23,770 - home - INFO - Loading admin page.
+2018-09-08 21:19:30,913 - elasticsearch - INFO - DELETE http://localhost:9200/images [status:200 request:0.215s]
+2018-09-08 21:19:34,843 - AddImage - INFO - Try to add images from images
+2018-09-08 21:19:35,192 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.305s]
+2018-09-08 21:19:35,357 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.014s]
+2018-09-08 21:19:35,430 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.028s]
+2018-09-08 21:19:35,577 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.013s]
+2018-09-08 21:19:35,578 - AddImage - INFO - Try to add images from images\images2
+2018-09-08 21:19:35,738 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.027s]
+2018-09-08 21:19:35,740 - AddImage - INFO - Try to add images from images\images2\images3
+2018-09-08 21:19:35,880 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.029s]
+2018-09-08 21:19:35,883 - AddImage - INFO - Total 6 images added to server.
+2018-09-08 21:19:55,927 - home - INFO - Loading admin page.
+2018-09-08 21:20:15,877 - upload - INFO - Send upload request.
+2018-09-08 21:20:15,887 - upload - INFO - upload 003.jpg to search
+2018-09-08 21:20:15,892 - SearchImage - INFO - Search image uploadimage\003.jpg...
+2018-09-08 21:20:15,996 - elasticsearch - INFO - GET http://localhost:9200/images/image/_search?size=100&timeout=10s [status:200 request:0.008s]

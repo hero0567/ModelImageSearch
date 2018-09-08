@@ -15,18 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from web.view import homepage
 from web.view import home
-from web.view import search
 from web.view import upload
-from web import settings
 
 urlpatterns = [
     path('', home.hello),
-    path('home/', homepage.home),
+    path('admin/', home.admin),
     path('login/', admin.site.urls),
-    path('search/', search.view),
-    path('search/result/', search.result),
+    path('search/', home.view),
+    path('delete/', home.delete),
+    path('add/', home.add),
     path('upload/', upload.upload),
 
     #path('static/','django.views.static.serve',{'document_root':settings.STATIC_ROOT}, name='static'),
