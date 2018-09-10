@@ -5,13 +5,14 @@ import logging.config
 logging.config.fileConfig('log.conf')
 logger = logging.getLogger('SearchImage')
 
-def search(name):
+def search(name, all_orientations=False):
     es = Elasticsearch()
     ses = SignatureES(es)
     logger.info("Search image %s...", name)
-    result = ses.search_image(name)
-    #result = ses.search_image(name, all_orientations=True)
+    #result = ses.search_image(name)
+    result = ses.search_image(name, all_orientations)
     #result = ses.search_single_record(name)
     return result
+
 
 #search('images/001.jpg')

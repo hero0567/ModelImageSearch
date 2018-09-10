@@ -6,9 +6,15 @@
 </head>
 <body>
 <form action="/upload/" method="post" enctype="multipart/form-data">
-    选择你要搜索的图片
+    <h3>选择你要搜索的图片</h3>
     <input type="file" name="image_data">
-    <input type="submit" value="Search">
+    <input type="submit" value="搜索">
+</form>
+<form action="/upload/" method="post" enctype="multipart/form-data">
+    <h3>选择你要搜索的图片</h3>
+    <input type="hidden" name="all_orientations" value="true">
+    <input type="file" name="image_data">
+    <input type="submit" value="搜索(旋转)"> 搜索镜像、旋转和颜色反转的所有组合，但是耗时更长。
 </form>
 </body>
 </html>
