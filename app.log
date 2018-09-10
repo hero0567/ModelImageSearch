@@ -131,3 +131,4 @@
 2018-09-08 21:52:26,738 - upload - INFO - upload »¡ÐÎÎÆ (101).jpg to search
 2018-09-08 21:52:26,751 - SearchImage - INFO - Search image uploadimage\»¡ÐÎÎÆ (101).jpg...
 2018-09-08 21:52:27,284 - elasticsearch - INFO - GET http://localhost:9200/images/image/_search?size=100&timeout=10s [status:200 request:0.011s]
+2018-09-10 09:55:41,902 - home - INFO - Loading home page.

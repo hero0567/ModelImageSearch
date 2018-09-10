@@ -13,5 +13,5 @@ if __name__ == '__main__':
             "forget to activate a virtual environment?"
         ) from exc
     if(len(sys.argv) == 1):
-        args=[sys.argv[0], "runserver", "8000"];
+        args=[sys.argv[0], "runserver", "0.0.0.0:8000"];
     execute_from_command_line(args)
