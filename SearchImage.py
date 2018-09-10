@@ -10,6 +10,8 @@ def search(name):
     ses = SignatureES(es)
     logger.info("Search image %s...", name)
     result = ses.search_image(name)
+    #result = ses.search_image(name, all_orientations=True)
+    #result = ses.search_single_record(name)
     return result
 
 #search('images/001.jpg')

@@ -1,0 +1,4 @@
+images/
+uploadimage/
+app.log*
+__pycache__/

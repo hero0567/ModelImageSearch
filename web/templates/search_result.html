@@ -5,16 +5,64 @@
     <title>Search Result</title>
 </head>
 <body>
+<script>
+function rotate90(){
+    var eles = document.getElementsByName("resultImg");
+    for (var i = 0; i < eles.length; i++) {
+        eles[i].style.WebkitTransform="rotate(90deg)";
+    }
+}
+function rotate180(){
+    var eles = document.getElementsByName("resultImg");
+    for (var i = 0; i < eles.length; i++) {
+        eles[i].style.WebkitTransform="rotate(180deg)";
+    }
+}
+
+function rotate270(){
+    var eles = document.getElementsByName("resultImg");
+    for (var i = 0; i < eles.length; i++) {
+        eles[i].style.WebkitTransform="rotate(270deg)";
+    }
+}
+
+function rotate0(){
+    var eles = document.getElementsByName("resultImg");
+    for (var i = 0; i < eles.length; i++) {
+        eles[i].style.WebkitTransform="rotate(0deg)";
+    }
+}
+
+</script>
 
 <div style="margin-top: 20px;margin-left: 55px">
+
+    <table border="0">
+        <tr>
+            <tr>
+                <td>
+                    <div style="margin: 5px">
+                        <h1>原始图片</h1>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div name="resultImg">
+                        <img width="300px" height="300px"  src="{{ load_img }}" />
+                    </div>
+                </td>
+            </tr>
+        </tr>
+    </table>
+
     <div style="margin: 5px">
-        <h1>原始图片</h1>
-    </div>
-    <div>
-        <img width="200px" src="{{ load_img }}" />
-    </div>
-    <div style="margin: 5px">
-        <h1>搜索结果</h1>
+        <h1>搜索结果
+            <input type="button" onclick="rotate90()" value="   旋转 90度  " width="50px" />
+            <input type="button" onclick="rotate180()" value="   旋转 180度  " width="50px" />
+            <input type="button" onclick="rotate270()" value="   旋转 270度  " width="50px" />
+            <input type="button" onclick="rotate0()" value="   还原  " width="50px" />
+        </h1>
     </div>
     <table border="1" cellspacing="0" cellpadding="0" border-color="#b6ff00">
         <tr><td>Score</td><td>Path</td><td>Img</td></tr>
@@ -22,7 +70,11 @@
         <tr>
             <td>{{ r.score }}</td>
             <td>{{ r.path }}</td>
-            <td><img width="200px" src="/static/{{ r.path }}" /></td>
+            <td>
+                <div name="resultImg" >
+                    <img width="300px" height="300px" src="/static/{{ r.path }}" />
+                </div>
+            </td>
         </tr>
         {% endfor %}
     </table>

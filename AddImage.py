@@ -20,7 +20,7 @@ def add_dir_image(src):
                 add_dir_image(os.path.join(src, file))
                 continue
             else:
-                if file.endswith(".jpg"):
+                if file.lower().endswith(".jpg") or file.lower().endswith(".png"):
                     ses.add_image(os.path.join(src, file))
                     count=count+1
 
