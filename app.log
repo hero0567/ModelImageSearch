@@ -1,1 +1,10 @@
-2018-09-10 15:12:30,107 - SearchImage - INFO - Search image uploadimage\1.JPG...
+2018-09-10 22:27:52,676 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.019s]
+2018-09-10 22:27:52,695 - AddImage - INFO - Add image images\01-椅子板凳\01-单椅\01-软包椅子\32407809.jpg
+2018-09-10 22:27:52,763 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.009s]
+2018-09-10 22:27:52,768 - AddImage - INFO - Add image images\01-椅子板凳\01-单椅\01-软包椅子\33010161.jpg
+2018-09-10 22:27:53,095 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.010s]
+2018-09-10 22:27:53,098 - AddImage - INFO - Add image images\01-椅子板凳\01-单椅\01-软包椅子\33065611.jpg
+2018-09-10 22:27:53,268 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.027s]
+2018-09-10 22:27:53,270 - AddImage - INFO - Add image images\01-椅子板凳\01-单椅\01-软包椅子\33185767.jpg
+2018-09-10 22:27:53,508 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.023s]
+2018-09-10 22:27:53,510 - AddImage - INFO - Add image images\01-椅子板凳\01-单椅\01-软包椅子\33185803.jpg
