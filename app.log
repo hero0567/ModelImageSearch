@@ -149,3 +149,30 @@
 2018-09-12 22:37:10,548 - upload - INFO - upload 23949512.png to search
 2018-09-12 22:37:10,562 - SearchImage - INFO - Search image uploadimage\23949512.png...
 2018-09-12 22:37:11,866 - elasticsearch - INFO - GET http://localhost:9200/images/image/_search?size=100&timeout=10s [status:200 request:0.010s]
+2018-09-12 22:57:23,601 - elasticsearch - INFO - DELETE http://localhost:9200/images [status:200 request:0.301s]
+2018-09-12 22:57:25,467 - AddImage - INFO - Try to add images from images
+2018-09-12 22:57:25,469 - AddImage - INFO - Add image images\23949512.jpg
+2018-09-12 22:57:27,545 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.574s]
+2018-09-12 22:57:27,550 - AddImage - INFO - Add image images\23949512.png
+2018-09-12 22:57:29,495 - elasticsearch - INFO - POST http://localhost:9200/images/image?refresh=false [status:201 request:0.040s]
+2018-09-12 22:57:29,499 - AddImage - INFO - Total 2 images added to server.
+2018-09-12 22:57:29,499 - AddImage - INFO - Total 0 error images add failed to server.
+2018-09-12 22:57:42,941 - upload - INFO - Send upload request.
+2018-09-12 22:57:42,944 - upload - INFO - upload 1.jpg to search
+2018-09-12 22:57:42,949 - SearchImage - INFO - Search image uploadimage\1.jpg...
+2018-09-12 22:57:43,020 - elasticsearch - INFO - GET http://localhost:9200/images/image/_search?size=100&timeout=10s [status:200 request:0.014s]
+2018-09-12 22:57:50,463 - upload - INFO - Send upload request.
+2018-09-12 22:57:50,478 - upload - INFO - upload 23949512.jpg to search
+2018-09-12 22:57:50,482 - SearchImage - INFO - Search image uploadimage\23949512.jpg...
+2018-09-12 22:57:51,916 - elasticsearch - INFO - GET http://localhost:9200/images/image/_search?size=100&timeout=10s [status:200 request:0.021s]
+2018-09-12 22:58:00,531 - upload - INFO - Send upload request.
+2018-09-12 22:58:00,532 - upload - INFO - upload 1.jpg to search
+2018-09-12 22:58:00,537 - SearchImage - INFO - Search image uploadimage\1.jpg...
+2018-09-12 22:58:00,597 - elasticsearch - INFO - GET http://localhost:9200/images/image/_search?size=100&timeout=10s [status:200 request:0.010s]
+2018-09-12 22:58:00,631 - elasticsearch - INFO - GET http://localhost:9200/images/image/_search?size=100&timeout=10s [status:200 request:0.007s]
+2018-09-12 22:58:00,667 - elasticsearch - INFO - GET http://localhost:9200/images/image/_search?size=100&timeout=10s [status:200 request:0.008s]
+2018-09-12 22:58:00,701 - elasticsearch - INFO - GET http://localhost:9200/images/image/_search?size=100&timeout=10s [status:200 request:0.004s]
+2018-09-12 22:58:00,738 - elasticsearch - INFO - GET http://localhost:9200/images/image/_search?size=100&timeout=10s [status:200 request:0.008s]
+2018-09-12 22:58:00,778 - elasticsearch - INFO - GET http://localhost:9200/images/image/_search?size=100&timeout=10s [status:200 request:0.005s]
+2018-09-12 22:58:00,806 - elasticsearch - INFO - GET http://localhost:9200/images/image/_search?size=100&timeout=10s [status:200 request:0.005s]
+2018-09-12 22:58:00,837 - elasticsearch - INFO - GET http://localhost:9200/images/image/_search?size=100&timeout=10s [status:200 request:0.005s]
