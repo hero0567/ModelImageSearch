@@ -7,7 +7,7 @@ logger = logging.getLogger('SearchImage')
 
 def search(name, all_orientations=False):
     es = Elasticsearch()
-    ses = SignatureES(es)
+    ses = SignatureES(es, distance_cutoff=0.3)
     logger.info("Search image %s...", name)
     #result = ses.search_image(name)
     result = ses.search_image(name, all_orientations)

@@ -13,24 +13,30 @@ def upload(request):
     logger.info("Send upload request.")
 
     starttime = datetime.datetime.now()
-    if request.method == 'POST':# 获取对象
-        file = request.FILES.get('image_data')
+    files = request.FILES.getlist('image_data')
+    orientations = False
+    context = {}
+    results = []
+
+    for file in files:
+        result = {}
         logger.info("upload %s to search", file.name)
         f = open(os.path.join('uploadimage', file.name), 'wb')
         for chunk in file.chunks():
             f.write(chunk)
         f.close()
 
-    orientations = False
-    all_orientations = request.POST.get('all_orientations')
-    if "true" == all_orientations:
-        orientations = True
-    context = {}
-    result = SearchImage.search(os.path.join('uploadimage', file.name), orientations)
+
+        all_orientations = request.POST.get('all_orientations')
+        if "true" == all_orientations:
+            orientations = True
+        sr = SearchImage.search(os.path.join('uploadimage', file.name), orientations)
+        load_img = os.path.join('/static', 'uploadimage', file.name)
+        result["key"] = load_img;
+        result["value"] = sr;
+        results.append(result)
     endtime = datetime.datetime.now()
     searchtime = (endtime-starttime).seconds
     context['searchtime'] = searchtime
-    context['load_img'] = os.path.join('/static', 'uploadimage', file.name)
-    context['result'] = result
+    context['results'] = results
     return render(request, 'search_result.html', context)
-    #return render(request, 'upload/upload.html')
