@@ -118,8 +118,7 @@ USE_TZ = True
 
 #STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    'C:\\Users\\lin.xia\\Pictures\\static',
-    'C:\\workspace\\ModelImageSearch',
+    BASE_DIR,
     os.path.join(BASE_DIR, 'images'),
     os.path.join(BASE_DIR, 'uploadimage'),
 ]
