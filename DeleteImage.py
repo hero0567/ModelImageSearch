@@ -5,8 +5,7 @@ import logging.config
 logging.config.fileConfig('log.conf')
 logger = logging.getLogger('DeleteImage')
 
-es = Elasticsearch()
-ses = SignatureES(es)
-
 def delete():
+    es = Elasticsearch()
+    ses = SignatureES(es)
     es.indices.delete("images")
