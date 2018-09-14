@@ -25,7 +25,10 @@ urlpatterns = [
     path('search/', home.view),
     path('delete/', home.delete),
     path('add/', home.add),
+    path('vnotice/', home.vnotice),
+    path('unotice/', home.unotice),
     path('upload/', upload.upload),
+
 
     #path('static/','django.views.static.serve',{'document_root':settings.STATIC_ROOT}, name='static'),
     #path('uploadimage/', 'django.views.static.serve', {'document_root':'C:\\workspace\\ModelImageSearch\\uploadimage'}),

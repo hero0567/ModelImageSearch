@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import os
 import sys
+import ConfigureUtil
 
 if __name__ == '__main__':
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'web.settings')
@@ -14,4 +15,5 @@ if __name__ == '__main__':
         ) from exc
     if(len(sys.argv) == 1):
         args=[sys.argv[0], "runserver", "0.0.0.0:8000"];
+    ConfigureUtil.load_notice()
     execute_from_command_line(args)
