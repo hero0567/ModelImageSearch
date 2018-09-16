@@ -18,7 +18,7 @@ def admin(request):
     pwd = request.GET.get('pwd')
     if "123" == pwd:
         return render(request, 'admin.html', None)
-    return render(request, 'admin.html', None)
+    return render(request, 'error.html', None)
 
 def view(request):
     logger.info("Loading view page.")
@@ -28,6 +28,9 @@ def view(request):
 
 def delete(request):
     logger.info("Loading delete page.")
+    pwd = request.GET.get('pwd')
+    if "123" != pwd:
+        return render(request, 'error.html', None)
     starttime = datetime.datetime.now()
     DeleteImage.delete()
     endtime = datetime.datetime.now()
@@ -38,6 +41,10 @@ def delete(request):
 
 def add(request):
     logger.info("Loading add page.")
+    pwd = request.GET.get('pwd')
+    if "123" != pwd:
+        return render(request, 'error.html', None)
+        
     starttime = datetime.datetime.now()
     AddImage.import_image("images")
     endtime = datetime.datetime.now()
