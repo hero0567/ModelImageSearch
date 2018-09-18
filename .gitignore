@@ -7,3 +7,4 @@ __pycache__/
 web/__pycache__/
 .idea/
 *.jpg
+configure.text
