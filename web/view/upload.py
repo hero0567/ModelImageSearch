@@ -14,6 +14,9 @@ def upload(request):
 
     starttime = datetime.datetime.now()
     files = request.FILES.getlist('image_data')
+    image_match = request.POST.get('image_match')
+    print(type(image_match))
+    print("111")
     orientations = False
     context = {}
     results = []
@@ -30,7 +33,7 @@ def upload(request):
         all_orientations = request.POST.get('all_orientations')
         if "true" == all_orientations:
             orientations = True
-        sr = SearchImage.search(os.path.join('uploadimage', file.name), orientations)
+        sr = SearchImage.search(os.path.join('uploadimage', file.name), orientations, image_match)
         load_img = os.path.join('/static', 'uploadimage', file.name)
         result["key"] = load_img;
         result["value"] = sr;
