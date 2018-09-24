@@ -26,7 +26,7 @@ def add_dir_image(src, lastImg=None):
                 continue
             else:
                 if file.lower().endswith(".jpg") or file.lower().endswith(".png"):
-                    if skip and lastImg != None and file != lastImg:
+                    if skip and lastImg != None and os.path.join(src, file) != lastImg:
                         logger.info("Skip image %s", os.path.join(src, file))
                         continue
                     skip = False
