@@ -5,12 +5,21 @@
     <title>Amazon Admin Page</title>
 </head>
 <body>
+<script>
+function reload(){
+    var lastImg=document.getElementById("lastImg").value
+    window.location.href="/reload/?lastImg="+lastImg;
+}
+</script>
+
 <h1>Welcome to Amazon Admin Page.</h1><br/>
 
 
 删除操作:  <a href="/delete">删除所有数据</a><br/>
 
 添加操作:  <a href="/add">添加数据</a><br/>
+
+继续上次中断添加:  <input type="text" id="lastImg"/> <a href="#" onclick="reload()">继续添加数据</a><br/>
 
 更新公告:  <a href="/vnotice">更新公告</a><br/>
 
