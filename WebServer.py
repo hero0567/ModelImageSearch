@@ -2,6 +2,10 @@
 import os
 import sys
 import ConfigureUtil
+import logging.config
+
+logging.config.fileConfig('log.conf')
+logger = logging.getLogger('WebServer')
 
 if __name__ == '__main__':
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'web.settings')
@@ -16,4 +20,7 @@ if __name__ == '__main__':
     if(len(sys.argv) == 1):
         args=[sys.argv[0], "runserver", "0.0.0.0:8000"];
     ConfigureUtil.load_notice()
-    execute_from_command_line(args)
+    try:
+        execute_from_command_line(args)
+    except Exception as e:
+        logger.error("WebServer crash %s", e)

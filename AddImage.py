@@ -2,6 +2,7 @@ from elasticsearch import Elasticsearch
 from image_match.elasticsearch_driver import SignatureES
 import os.path
 import logging.config
+import sys
 
 logging.config.fileConfig('log.conf')
 logger = logging.getLogger('AddImage')
@@ -51,5 +52,8 @@ def import_image(src, lastImg):
     logger.info("Total %s error images add failed to server.", error)
 
 if __name__ == '__main__':
-    import_image(os.path.join("images"))
+    lastImg = None
+    if(len(sys.argv) == 2):
+        lastImg = sys.argv[1]
+    import_image(os.path.join("images"), lastImg)
 
