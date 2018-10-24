@@ -25,6 +25,7 @@ urlpatterns = [
     path('search/', home.view),
     path('delete/', home.delete),
     path('add/', home.add),
+    path('reload/', home.reload),
     path('vnotice/', home.vnotice),
     path('unotice/', home.unotice),
     path('upload/', upload.upload),

@@ -1,4 +1,5 @@
 # ModelImageSearch
+ModelImageSearch (Python+Lucene+Django)：加载图片到Lucene，通过GUI搜索相似图片，并展示给用户
 
 1. install python
 2. install VS ( 4GB Space )

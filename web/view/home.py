@@ -46,7 +46,25 @@ def add(request):
         return render(request, 'error.html', None)
         
     starttime = datetime.datetime.now()
-    AddImage.import_image("images")
+    AddImage.import_image("images", None)
+    endtime = datetime.datetime.now()
+    addtime = (endtime-starttime).seconds
+    context = {}
+    context['addtime'] = addtime
+    return render(request, 'success.html', context)
+def reload(request):
+    logger.info("Reload page.")
+    pwd = request.GET.get('pwd')
+    if "123" != pwd:
+        return render(request, 'error.html', None)
+
+    lastImg = request.GET.get('lastImg')
+    if None == lastImg or "" == lastImg:
+        return render(request, 'error.html', None)
+
+    logger.info("Reload image start with %s.", lastImg)
+    starttime = datetime.datetime.now()
+    AddImage.import_image("images", lastImg)
     endtime = datetime.datetime.now()
     addtime = (endtime-starttime).seconds
     context = {}
