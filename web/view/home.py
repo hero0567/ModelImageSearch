@@ -17,7 +17,10 @@ def admin(request):
     logger.info("Loading admin page.")
     pwd = request.GET.get('pwd')
     if "123" == pwd:
-        return render(request, 'admin.html', None)
+        context = {}
+        last = lastImg()
+        context['last'] = last
+        return render(request, 'admin.html', context)
     return render(request, 'error.html', None)
 
 def view(request):
@@ -80,3 +83,8 @@ def unotice(request):
     notice = request.POST.get('notice')
     ConfigureUtil.write_notice(notice)
     return render(request, 'success.html', None)
+    
+def lastImg():
+    with open('last', encoding='UTF-8') as file:
+        for line in file:
+            return line
