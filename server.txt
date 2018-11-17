@@ -1,0 +1,48 @@
+https://codeload.github.com/hero0567/ModelImageSearch/zip/master
+
+ssh -p 9080 root@uec.fortiddns.com
+GnPsneMle
+
+
+wget http://127.0.0.1:9200/_cat/indices?v
+cat indices?v.5
+
+curl -XDELETE http://localhost:9200/images
+
+firewall-cmd --zone=public --add-port=9200/tcp --permanent
+firewall-cmd --reload
+
+
+[root@localhost ModelImageSearch]# grep -rn ".jpg" app.log* | wc -l
+14032
+[root@localhost ModelImageSearch]# vim app.log
+[root@localhost ModelImageSearch]# cd images/
+[root@localhost images]# find . -name B00U433X20.jpg
+./Reference images/Amazon_old/B00U433X20.jpg
+
+
+[root@localhost ModelImageSearch]# grep -rn "Skip image " app.log* | wc -l
+79216
+
+[root@localhost ~]# cd ModelImageSearch/
+[root@localhost ModelImageSearch]# cd images/
+[root@localhost images]# find . -name *.jpg | wc -l
+79207
+
+
+
+Step to start
+1. ssh
+ssh -p 9080 root@uec.fortiddns.com
+GnPsneMle
+
+2. start webserver
+cd ModelImageSearch/
+nohup python3 WebServer.py &
+
+3. start elasicsearch
+cd ~/ModelImageSearch/tool/elasticsearch-2.2.1/bin/
+nohup ./elasticsearch  &
+
+crontab -e
+*/1 * * * * /root/ModelImageSearch/tool/watcher.sh
