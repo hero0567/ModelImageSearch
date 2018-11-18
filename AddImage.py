@@ -30,23 +30,23 @@ def add_dir_image(src, lastImg=None):
                 add_dir_image(os.path.join(src, file), lastImg)
                 continue
             else:
-                if file.lower().endswith(".jpg") or file.lower().endswith(".png"):
-                    if skip and lastImg != None and os.path.join(src, file) != lastImg:
-                        logger.info("Skip image %s", os.path.join(src, file))
-                        skipCount = skipCount + 1
-                        continue
-                    skip = False                    
-                    if check_exist_and_insert(os.path.join(src, file)):
-                        logger.info("Existed image %s", os.path.join(src, file))
-                        existed = existed + 1
-                        continue
-                    logger.info("Add image %s", os.path.join(src, file))    
-                    try:
+                try:
+                    if file.lower().endswith(".jpg") or file.lower().endswith(".png"):
+                        if skip and lastImg != None and os.path.join(src, file) != lastImg:
+                            logger.info("Skip image %s", os.path.join(src, file))
+                            skipCount = skipCount + 1
+                            continue
+                        skip = False                    
+                        if check_exist_and_insert(os.path.join(src, file)):
+                            logger.info("Existed image %s", os.path.join(src, file))
+                            existed = existed + 1
+                            continue
+                        logger.info("Add image %s", os.path.join(src, file))    
                         ses.add_image(os.path.join(src, file))
-                    except:
-                        error = error + 1
-                        logger.error("Failed to add %s to server", os.path.join(src, file))
-                    count=count+1
+                except:
+                    error = error + 1
+                    logger.error("Failed to add %s to server", os.path.join(src, file)) 
+                count=count+1
                     
 def check_exist_and_insert(file):
     if file not in list:
@@ -69,10 +69,12 @@ def import_image(src, lastImg):
         global skip
         global existed
         global skipCount
+        global list
         count = 0
         error = 0
         existed = 0
         skipCount = 0
+        list = []
         load_image_list()
         if lastImg != None:
             skip = True
