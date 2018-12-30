@@ -3,7 +3,6 @@ from django.http import StreamingHttpResponse#文件流
 
 def download(request):
     zipPath = request.GET.get('file')
-    zipPath = "images\\ZIP\\Amazon\\B01MUCSJCK.zip"
     zipName = zipPath.split(os.path.sep)[-1]
     response = StreamingHttpResponse(file_read(zipPath))
     response['Content-Type'] = 'application/octet-stream'
