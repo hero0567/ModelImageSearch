@@ -32,7 +32,7 @@ def view(request):
 def delete(request):
     logger.info("Loading delete page.")
     pwd = request.GET.get('pwd')
-    if "123" != pwd:
+    if "1234" != pwd:
         return render(request, 'error.html', None)
     starttime = datetime.datetime.now()
     DeleteImage.delete()

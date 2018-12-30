@@ -13,6 +13,7 @@ count = 0
 error = 0
 existed = 0
 skipCount = 0
+added = 0
 skip = False
 list = []
 
@@ -22,6 +23,7 @@ def add_dir_image(src, lastImg=None):
     global skip
     global existed
     global skipCount
+    global added
     logger.info('Try to add images from %s', src)
     if os.path.isdir(src):
         files = os.listdir(src)
@@ -43,6 +45,7 @@ def add_dir_image(src, lastImg=None):
                             continue
                         logger.info("Add image %s", os.path.join(src, file))    
                         ses.add_image(os.path.join(src, file))
+                        added = added + 1
                 except:
                     error = error + 1
                     logger.error("Failed to add %s to server", os.path.join(src, file)) 
@@ -70,10 +73,12 @@ def import_image(src, lastImg):
         global existed
         global skipCount
         global list
+        global added
         count = 0
         error = 0
         existed = 0
         skipCount = 0
+        added = 0
         list = []
         load_image_list()
         if lastImg != None:
@@ -84,12 +89,14 @@ def import_image(src, lastImg):
         logger.error(e)
     logger.info("Total %s skip images.", skipCount)
     logger.info("Total %s existed images.", existed)
-    logger.info("Total %s images added to server.", count)
+    logger.info("Total %s images added to server.", added)
     logger.info("Total %s error images add failed to server.", error)
+    logger.info("Total %s item found.", count)
 
 if __name__ == '__main__':
     lastImg = None
     if(len(sys.argv) == 2):
         lastImg = sys.argv[1]
     import_image(os.path.join("images"), lastImg)
+
 

@@ -15,8 +15,6 @@ def upload(request):
     starttime = datetime.datetime.now()
     files = request.FILES.getlist('image_data')
     image_match = request.POST.get('image_match')
-    print(type(image_match))
-    print("111")
     orientations = False
     context = {}
     results = []
