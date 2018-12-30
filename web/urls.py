@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from web.view import home
 from web.view import upload
+from web.view import download
 
 urlpatterns = [
     path('', home.hello),
@@ -29,6 +30,7 @@ urlpatterns = [
     path('vnotice/', home.vnotice),
     path('unotice/', home.unotice),
     path('upload/', upload.upload),
+    path('download/', download.download),
 
 
     #path('static/','django.views.static.serve',{'document_root':settings.STATIC_ROOT}, name='static'),

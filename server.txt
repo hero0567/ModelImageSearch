@@ -1,4 +1,3 @@
-https://codeload.github.com/hero0567/ModelImageSearch/zip/master
 
 ssh -p 9080 root@uec.fortiddns.com
 GnPsneMle
