@@ -66,7 +66,7 @@ function rotate0(){
             </h1>
         </div>
         <table border="1" cellspacing="0" cellpadding="0" border-color="#b6ff00">
-            <tr><td>Score</td><td>Path</td><td>Img</td></tr>
+            <tr><td>Score</td><td>Path</td><td>Img</td><td>Download</td></tr>
             {% for r in result.value %}
             <tr>
                 <td>{{ r.score }}</td>
@@ -75,6 +75,12 @@ function rotate0(){
                     <div name="resultImg" >
                         <img width="300px" height="300px" src="/static/{{ r.path }}" />
                     </div>
+                </td>
+                <td>
+                    {% if r.zip_path %}
+                        <a href="/download/?file={{ r.zip_path }}" name="下载ZIP">下载ZIP</a>
+                    {% endif %}
+
                 </td>
             </tr>
             {% endfor %}
