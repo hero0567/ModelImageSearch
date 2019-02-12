@@ -13,11 +13,28 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+import os
+
+from django.conf import settings
+from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path
+from django.conf import settings
+from django.views.static import serve
+
+from web.settings import BASE_DIR
 from web.view import home
 from web.view import upload
 from web.view import download
+
+# Static files (CSS, JavaScript, Images)
+# STATIC_URL = '/static/'
+# STATIC_ROOT = os.path.join('templates/static')
+# STATICFILES_DIRS = [
+#     ("css", os.path.join(STATIC_ROOT, 'css')),
+#     ("img", os.path.join(STATIC_ROOT, 'img')),
+#     ("js", os.path.join(STATIC_ROOT, 'js')),
+# ]
 
 urlpatterns = [
     path('', home.hello),
@@ -31,8 +48,4 @@ urlpatterns = [
     path('unotice/', home.unotice),
     path('upload/', upload.upload),
     path('download/', download.download),
-
-
-    #path('static/','django.views.static.serve',{'document_root':settings.STATIC_ROOT}, name='static'),
-    #path('uploadimage/', 'django.views.static.serve', {'document_root':'C:\\workspace\\ModelImageSearch\\uploadimage'}),
 ]

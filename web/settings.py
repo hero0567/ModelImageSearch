@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = "*"
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -121,5 +120,6 @@ STATICFILES_DIRS = [
     BASE_DIR,
     os.path.join(BASE_DIR, 'images'),
     os.path.join(BASE_DIR, 'uploadimage'),
+    os.path.join(BASE_DIR, 'static'),
 ]
 STATIC_URL = '/static/'
