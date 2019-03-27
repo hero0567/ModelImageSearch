@@ -1,7 +1,7 @@
 # ModelImageSearch
 
 ##### What is ModelImageSearch
-ModelImageSearch help user find similar image that user upload by GUI from libarary.
+ModelImageSearch help user find similar image that user upload by GUI from ElasticSearch.
 
 ModelImageSearch (Python+ElasticSearch+Django)：Load images into elasticsearch. Compare with given image and find similiar images to user.
 
