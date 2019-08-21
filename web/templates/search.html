@@ -7,30 +7,30 @@
 <body>
 <h1>{{ notice }}</h1>
 <form action="/upload/" method="post" enctype="multipart/form-data">
-    <h3>选择你要搜索的图片</h3>
+    <h3>Choose your search picture</h3>
     <input type="file" name="image_data" multiple>
-    <input type="submit" value="搜索">
+    <input type="submit" value="Search">
 </form>
 <br/>
 <form action="/upload/" method="post" enctype="multipart/form-data">
-    <h3>选择你要搜索的图片</h3>
+    <h3>Choose your search picture</h3>
     <input type="hidden" name="all_orientations" value="true">
     <input type="file" name="image_data" multiple>
-    <input type="submit" value="搜索(旋转)"> 搜索镜像、旋转和颜色反转的所有组合，但是耗时更长。
+    <input type="submit" value="Search(rotation)"> Search for all combinations of mirroring, rotation, and color inversion, but it takes longer.
 </form>
 <br/>
 <form action="/upload/" method="post" enctype="multipart/form-data">
-    <h3>选择你要搜索的图片</h3>
+    <h3>Choose your search picture</h3>
     <input type="hidden" name="all_orientations" value="true">
     <input type="file" name="image_data" multiple>
-	匹配度
+	Matching Rate
 	<select name="image_match">
 	  <option>0.7</option>
 	  <option selected="selected">0.6</option>
 	  <option>0.5</option>
 	  <option>0.4</option>
 	</select>
-    <input type="submit" value="二次搜索(旋转)"> 匹配度值越大，匹配的范围越大
+    <input type="submit" value="Double Search(rotation)"> The larger the value of matching degree, the larger the range of matching
 </form>
 </body>
 </html>

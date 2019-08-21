@@ -36,14 +36,14 @@ function rotate0(){
 </script>
 
 <div style="margin-top: 20px;margin-left: 55px">
-    <h5>本次查询一共消耗：{{searchtime}}秒</h5>
+    <h5>Search spend ：{{searchtime}} seconds</h5>
     {% for result in results %}
         <table border="0">
             <tr>
                 <tr>
                     <td>
                         <div style="margin: 5px">
-                            <h1>原始图片</h1>
+                            <h1>Search Picture</h1>
                         </div>
                     </td>
                 </tr>
@@ -58,11 +58,11 @@ function rotate0(){
         </table>
 
         <div style="margin: 5px">
-            <h1>搜索结果
-                <input type="button" onclick="rotate90()" value="   旋转 90度  " width="50px" />
-                <input type="button" onclick="rotate180()" value="   旋转 180度  " width="50px" />
-                <input type="button" onclick="rotate270()" value="   旋转 270度  " width="50px" />
-                <input type="button" onclick="rotate0()" value="   还原  " width="50px" />
+            <h1>Search Result
+                <input type="button" onclick="rotate90()" value="   Rotate 90 degree  " width="50px" />
+                <input type="button" onclick="rotate180()" value="   Rotate 180 degree  " width="50px" />
+                <input type="button" onclick="rotate270()" value="   Rotate 270 degree  " width="50px" />
+                <input type="button" onclick="rotate0()" value="   Restore  " width="50px" />
             </h1>
         </div>
         <table border="1" cellspacing="0" cellpadding="0" border-color="#b6ff00">
@@ -78,7 +78,7 @@ function rotate0(){
                 </td>
                 <td>
                     {% if r.zip_path %}
-                        <a href="/download/?file={{ r.zip_path }}" name="下载ZIP" target="_blank">下载ZIP</a>
+                        <a href="/download/?file={{ r.zip_path }}" name="Download ZIP" target="_blank">Download ZIP</a>
                     {% endif %}
 
                 </td>
