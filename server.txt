@@ -2,6 +2,7 @@
 ssh -p 9080 root@uec.fortiddns.com
 GnPsneMle
 
+mount -t cifs -o username=Library,domain=rooomy.cn.com,iocharset=utf8,password=j58J3d7LKP //uecfs/project/Library /mnt/Share
 
 wget http://127.0.0.1:9200/_cat/indices?v
 cat indices?v.5
